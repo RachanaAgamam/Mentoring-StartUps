@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 14, 2020 12:56:30 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.voidmain.pojo.Query" table="QUERY">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="postedBy" type="java.lang.String">
+            <column name="POSTEDBY" />
+        </property>
+        <property name="postedTo" type="java.lang.String">
+            <column name="POSTEDTO" />
+        </property>
+        <property name="queryDate" type="java.lang.String">
+            <column name="QUERYDATE" />
+        </property>
+        <property name="query" type="java.lang.String">
+            <column name="QUERY" />
+        </property>
+        <property name="reply" type="java.lang.String">
+            <column name="REPLY" />
+        </property>
+    </class>
+</hibernate-mapping>
